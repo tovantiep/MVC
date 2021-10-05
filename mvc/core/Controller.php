@@ -7,5 +7,8 @@ class Controller{
     public function view($view,$data=[]){
         require_once "./mvc/views/Users/".$view.".php";
     }
+    public function viewadmin($view,$data=[]){
+        require_once "./mvc/views/admin/".$view.".php";
+    }
 }
 ?>
