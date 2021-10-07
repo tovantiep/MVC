@@ -4,6 +4,9 @@
     <div class="card-header py-3">
         <h4 class="m-0 font-weight-bold text-primary">Bảng sản phẩm</h4>
     </div>
+            <form method="POST" action ="./home_admin/insert_view">
+                <button type="submit" class="btn btn-primary" style="height: 42px;" data-toggle="modal" data-target="#exampleModal" ><i class="fas fa-plus-square"></i> Thêm Mới Khách Hàng</button>
+            </form>
     <div class="card-body">
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -26,7 +29,7 @@
                     <tr>
                         <td><?php echo $i;?></td>
                         <td><?php echo $product["title_product"];?></td>
-                        <td><?php echo $product["price_product"];?></td>
+                        <td><?php echo number_format($product["price_product"], 0, ',', '.') ?> đ</td>
                         <?php 
                             if($product["id_catgory_product"]==1){
                         ?>
@@ -44,10 +47,21 @@
                         
                             }
                         ?>
-                        <td><?php echo $product["img_product"];?></td>
+                        <td> <a href=""><img width="60px" src="./public/img/gallery/<?php echo $product["img_product"];?>" class="card-img-top" alt="..."></a></td>
                         <td><?php echo $product["desc_product"];?></td>
-                        <td><?php echo $product["status"];?></td>
-                        <td><?php echo $product["id_product"];?></td>
+                        <?php 
+                            if($product["status"]==0){
+                        ?>
+                            <td>Hết hàng</td>
+                        <?php 
+                            }
+                            else if(($product["status"]==1)){
+                        ?>
+                            <td>Còn hàng</td>
+                        <?php
+                         }
+                           ?>
+                         <td><a class="btn btn-primary" href="UpdateProduct.php?idUpdateProduct=<?php echo $product["id"] ?>">Sửa</a> || <a class="btn btn-danger" href="?id=<?php echo $product["id"] ?>" >Xóa</a></td>
                     </tr>
                     <?php  
                     $i++;      

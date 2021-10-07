@@ -27,7 +27,7 @@
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link collapsed" href="#" >
+    <a class="nav-link collapsed" href="home_admin" >
         <i class="fas fa-fw fa-cog"></i>
         <span>Product</span>
     </a>
