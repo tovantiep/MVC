@@ -1,11 +1,14 @@
 <div class="container-fluid">
 <!-- DataTales Example -->
+<a href="home_admin"><button class="btn btn-success">Quay lai</button></a> 
 <div class="card shadow mb-4">
     <div class="card-header py-3">
+    
         <h3 class="m-0 font-weight-bold text-primary">Thêm sản phẩm</h3>
     </div>
     <div class="card-body">
         <div class="table-responsive">
+        
            <form action="home_admin/insert" method="POST">
                <div class="form-group">
                    <label for="">Tên sản phẩm</label>

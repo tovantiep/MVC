@@ -47,7 +47,7 @@
                         
                             }
                         ?>
-                        <td> <a href=""><img width="60px" src="./public/img/gallery/<?php echo $product["img_product"];?>" class="card-img-top" alt="..."></a></td>
+                        <td width="150px"> <a href=""><img  src="./public/img/gallery/<?php echo $product["img_product"];?>" class="card-img-top" alt="..."></a></td>
                         <td><?php echo $product["desc_product"];?></td>
                         <?php 
                             if($product["status"]==0){
@@ -61,7 +61,7 @@
                         <?php
                          }
                            ?>
-                         <td><a class="btn btn-primary" href="UpdateProduct.php?idUpdateProduct=<?php echo $product["id"] ?>">Sửa</a> || <a class="btn btn-danger" href="?id=<?php echo $product["id"] ?>" >Xóa</a></td>
+                         <td><a class="btn btn-primary" href="home_admin/update/<?php echo $product["id_product"] ?>">Sửa</a> || <a class="btn btn-danger" href="home_admin/delete/<?php echo $product["id_product"]; ?>" >Xóa</a></td>
                     </tr>
                     <?php  
                     $i++;      

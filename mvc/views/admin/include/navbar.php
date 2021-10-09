@@ -21,9 +21,9 @@
 
 <!-- Nav Item - Pages Collapse Menu -->
 <li class="nav-item">
-    <a class="nav-link collapsed" href="#" >
+    <a class="nav-link collapsed" href="home" >
         <i class="fas fa-fw fa-cog"></i>
-        <span>HOME</span>
+        <span>Web users</span>
     </a>
 </li>
 <li class="nav-item">
