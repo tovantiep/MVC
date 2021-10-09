@@ -5,7 +5,7 @@
         <h4 class="m-0 font-weight-bold text-primary">Bảng sản phẩm</h4>
     </div>
             <form method="POST" action ="./home_admin/insert_view">
-                <button type="submit" class="btn btn-primary" style="height: 42px;" data-toggle="modal" data-target="#exampleModal" ><i class="fas fa-plus-square"></i> Thêm Mới Khách Hàng</button>
+                <button type="submit" class="btn btn-primary" style="height: 42px;" data-toggle="modal" data-target="#exampleModal" ><i class="fas fa-plus-square"></i> Thêm Mới Sản phẩm</button>
             </form>
     <div class="card-body">
         <div class="table-responsive">
@@ -73,5 +73,4 @@
         </div>
     </div>
 </div>
-
 </div>
