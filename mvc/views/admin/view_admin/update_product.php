@@ -45,7 +45,7 @@
            if (isset($data["result"])) {
               if ($data["result"] == "true") {?>
                      <h3 class="alert alert-success">
-                      <?php echo "Sua thanh cong"?>
+                      <?php echo "Sua thanh cong vcl"?>
                 </h3>
                 <?php
               }
