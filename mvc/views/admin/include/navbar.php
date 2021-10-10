@@ -21,7 +21,7 @@
 
 <!-- Nav Item - Pages Collapse Menu -->
 <li class="nav-item">
-    <a class="nav-link collapsed" href="#" >
+    <a class="nav-link collapsed" href="home_admin" >
         <i class="fas fa-fw fa-cog"></i>
         <span>HOME</span>
     </a>
@@ -35,7 +35,7 @@
 
 <!-- Nav Item - Utilities Collapse Menu -->
 <li class="nav-item">
-    <a class="nav-link collapsed" href="#" >
+    <a class="nav-link collapsed" href="account" >
         <i class="fas fa-fw fa-wrench"></i>
         <span>Account</span>
     </a>
